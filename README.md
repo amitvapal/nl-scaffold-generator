@@ -180,4 +180,4 @@ MIT
 
 ## Author
 
-Amitva Pal — [GitHub](https://github.com/amitva) · [LinkedIn]([https://linkedin.com/in/amitva](https://www.linkedin.com/in/amitvapal/))
+Amitva Pal
