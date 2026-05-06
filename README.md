@@ -149,16 +149,6 @@ nl-scaffold-generator/
 └── README.md
 ```
 
-## Prompt design
-
-Each app type has a tailored system prompt that:
-
-- Specifies the conventional file layout for that type (e.g., `cli_tool` uses Click and a `cli.py` entrypoint; `dashboard` uses Streamlit with `app.py`).
-- Provides a short few-shot example of well-formed output.
-- Enforces a strict JSON schema so Pydantic parsing succeeds on the first try.
-- Bounds scope: max 8 files, max 200 lines per file. Keeps generation fast and outputs reviewable.
-
-I iterated across multiple rounds, testing each app type with three different descriptions and tracking valid-JSON rate, runnability, and idiomatic-pattern rate. The Pydantic-as-contract pattern was the unlock for reliability.
 
 ## Limitations
 
