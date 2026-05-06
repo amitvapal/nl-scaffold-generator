@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nl-scaffold-generator
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+    healthCheckPath: /api/health
